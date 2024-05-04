@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+.logo {
+  color: white;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: rebeccapurple;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px 2px black;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links {
+  margin: 10px;
+  border-radius: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding:10px 15px;
+}
+
+.nav-links li a:hover {
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 1px 1px white;
+}
+
+.nav {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: all 1s ease-in-out; */
+
+}
+
+
+
+.primary {
+  color: white;
+  background-color: black;
+}
+
+.primary:hover {
+  color: white;
+  background-color: rgb(68, 68, 68);
+}
+
+.secondary {
+  background-color: white;
+  color: black;
+}
+
+.secondary:hover {
+  background-color: rgb(236, 236, 236);
+  color: black;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.responsive-btn {
+  display: none;
+}
+
+.line {
+  background-color: white;
+  margin: 5px;
+  border-radius: 20px;
+  width: 30px;
+  height: 4px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .responsive-btn {
+    display: block;
+  }
+
+  .nav {
+    display: block;
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    padding: 20px;
+  }
+  
+  .responsive-nav {
+    top: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 10px;
+  }
+
+  .button {
+    margin: 5px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+}

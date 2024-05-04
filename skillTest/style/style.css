@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url(../images/header-back.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-clip: border-box;
+    height: 100vh;
+}
+
+.navBar {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.rightNavBar ul li {
+    display: inline;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.rightNavBar ul li a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.mainBodyTop {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+
+.headerBottom {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.headerBottomRight {
+    text-align: right;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.headerBottomRight ul li {
+    display: inline;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.headerBottomRight ul li a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.bodySectionContainer {
+    background-image: url(../images/main-section-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.bodySectionContainerText {
+    width: 60%;
+    margin: auto;
+}
+
+.top-bodySectionContainerText {
+    margin-bottom: 0;
+}
+
+.num {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: baseline;
+
+}
+
+.num .one {
+    color: #6a7b98;
+    padding-top: 10px;
+    font-size: 160px;
+    font-family: Bebas Neue;
+    font-weight: 600;
+}
+
+.num .num-dot {
+    background-color: #6a7b98;
+    height: 25px;
+    width: 25px;
+}
+
+h2 {
+    font-family: Oswald;
+    color: #314872;
+    position: relative;
+    top: -95px;
+    left: 160px;
+}
+
+.bodySectionContainerText p {
+    margin-left: 90px;
+    position: relative;
+    top: -60px;
+    font-size: 14px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/carousel-back.jpg);
+    background-size: 100%;
+    height: 200px;
+    scroll-behavior: smooth;
+}
+
+.carouselInside {
+    width: 100%;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* position: relative; */
+}
+
+.slide {
+    height: 150px;
+    flex: 0 0 25%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #333;
+}
+
+.bodySectionBottom {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.top-bodySectionBottom {
+    width: 30%;
+}
+
+.bodySectionBottom p {
+    width: 60%;
+    font-size: 14px;
+}
+
+
+.bodySectionBottomBar {
+    background-color: #404f6c;
+}
+
+.bodySectionBottomBarInside {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.tab1 {
+    width: 200px;
+    color: #404f6c;
+    background-color: #afb4be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.tab1,
+.tab2 {
+    font-weight: 900;
+    height: 100%;
+}
+
+.tab2 {
+    margin-left: 20px;
+    color: #afb4be;
+    background-color: #404f6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyBottomSection {
+    background-image: url(../images/body-bottom-back.jpg);
+    background-size: 100%;
+    height: 73vh;
+    padding: 70px 0px;
+}
+
+.bodyBottomSectionBox {
+    width: 330px;
+    opacity: 50%;
+    background-color: white;
+    opacity: 70%;
+    margin-left: 220px;
+    padding: 25px;
+}
+
+.bodyBottomSectionBox h1 {
+    margin-bottom: 0;
+}
+
+.bodyBottomSectionBox table {
+    font-family: Lato;
+    border-collapse: collapse;
+}
+
+
+table tr th {
+    width: 190px;
+    padding-right: 30px;
+}
+
+table tr td {
+    width: 200px;
+
+}
+
+.footer {
+    background-color: #404f6c;
+    height: 70px;
+}
+
+.footerInside {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerInsideLeft {
+
+    margin-top: 10px;
+}
+
+.footerInsideRight {
+    text-align: right;
+    color: #fff;
+    opacity: 20%;
+    font-family: Calibri;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .bodySectionBottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bodySectionBottom p {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .bodySectionContainerText {
+        width: 100%;
+    }
+
+    .footerInside {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bodySectionContainerText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bodySectionContainerText p {
+        margin: 20px;
+    }
+
+    .bodySectionBottomBarInside {
+        padding-left: 0;
+    }
+
+    .tab1,
+    .tab2 {
+        width: 50%;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .bodyBottomSectionBox {
+        margin-left: 0px;
+    }
+
+    .bodySectionContainerText {
+        width: 100%;
+    }
+
+    .num .one {
+        font-size: 100px;
+    }
+
+    h2 {
+        top: -85px;
+        left: 95px;
+    }
+
+    .bodySectionBottom p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        /* heights: 300px; */
+    }
+
+    .slide img {
+        /* margin: 10px; */
+        /* height: 250px !important; */
+    }
+}
